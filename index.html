@@ -7,45 +7,25 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Personal stylesheet-->
-    <link type="text/css" rel="stylesheet" href="style.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" media="screen,projection" />
     <!--Insert any additional external script sheets here:-->
 
 </head>
 
 <body>
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="materialize.min.js"></script>
-
 
 <!--Fixed navigation bar and elements-->
-<div class="navbar-fixed">
+<div class="navbar-fixed center">
     <nav>
         <div class="nav-wrapper indigo lighten-1">
             <a href="#!" class="brand-logo">NueSchool(LOGO)</a>
-            <ul class="right hide-on-med-and-down">           
-    </nav>
+            <ul class="right hide-on-med-and-down"> 
+   </nav>
 </div>
-
-        <!-- Modal Trigger -->
-        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-        
-        <!-- Modal Structure -->
-        <div id="modal1" class="modal">
-            <div class="modal-content">
-                <h4>Modal Header</h4>
-                <p>A bunch of text</p>
-            </div>
-            <div class="modal-footer">
-                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-            </div>
-        </div>
-        </ul>
-        </div>
 
 <!--Search bar-->
 <div class="nav-wrapper">
@@ -65,7 +45,8 @@
     <div class="row">
     <!--Video streaming API-->
         <div class="col s8">
-            <img class="test" src="http://www.mundodeportivo.com/r/GODO/MD/p4/Polideportivo/Imagenes/2017/11/14/Recortada/img_cgallen_20171114-094422_imagenes_md_terceros_foto_de_portada_the_rock_podria_volver_a_wrestlemania-kR0G-U4328813332159VB-980x554@MundoDeportivo-Web.jpg">
+            <iframe class="test" src="https://player.vimeo.com/video/259411563" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen
+            allowfullscreen></iframe>
         </div>
     
         <!--In-page nav menu-->
@@ -90,13 +71,13 @@
     <!--Inner-menu content-->
     <div class="card-content grey lighten-4">
         <div id="slack">
-            <img class="slack" src="slack.png">
+            <img class="slack" src="assets/images/slack.png">
         </div>
         <div id="github">
-            <img class="github" src="github.png">
+            <img class="github" src="assets/images/github.png">
         </div>
         <div id="linkedin">
-            <img class="linkedin" src="linkedin.jpg">
+            <img class="linkedin" src="assets/images/linkedin.jpg">
             </div>
         </div>
     </div>
@@ -109,9 +90,14 @@
                 <center><h5>TYPE YOUR NOTES HERE!</h5></center>
         </div>
     </div>
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+     <script>$(document).ready(function(){ // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal(); });</script>
+
 </body>
-
-
 
     <!--Footer-->
 <footer>
